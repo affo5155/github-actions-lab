@@ -38,4 +38,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Step
-        run: echo "Code successfully deployed to server!"
+        run: echo "Code successfully deployed to server!
