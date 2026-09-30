@@ -1,0 +1,17 @@
+name: New Lab Pipeline
+
+on: workflow_dispatch
+
+jobs:
+  build-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: echo "Compiling the code..."
+
+  deploy-code:
+    needs: build-code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Step
+        run: echo "Code successfully deployed to server!"
